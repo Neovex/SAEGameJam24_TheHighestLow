@@ -1,0 +1,315 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>SquareRoot</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\background.jpg" />
+    <None Remove="Assets\banner.png" />
+    <None Remove="Assets\BigMushroomPixelArt.png" />
+    <None Remove="Assets\CharacterIdlePixelArt.png" />
+    <None Remove="Assets\CharacterJumpPixelArt.png" />
+    <None Remove="Assets\CharacterWalkPixelArt.png" />
+    <None Remove="Assets\credits.png" />
+    <None Remove="Assets\highestlowtitlesccreen.png" />
+    <None Remove="Assets\hit.wav" />
+    <None Remove="Assets\jump.wav" />
+    <None Remove="Assets\level1.tmx" />
+    <None Remove="Assets\level2.tmx" />
+    <None Remove="Assets\Level3.tmx" />
+    <None Remove="Assets\Level4.tmx" />
+    <None Remove="Assets\MushroomPixelArt.png" />
+    <None Remove="Assets\music.ogg" />
+    <None Remove="Assets\pickup.wav" />
+    <None Remove="Assets\PixelArt\Background.png" />
+    <None Remove="Assets\PixelArt\Bounce.ogg" />
+    <None Remove="Assets\PixelArt\BounceFlange.ogg" />
+    <None Remove="Assets\PixelArt\CharacterFall.png" />
+    <None Remove="Assets\PixelArt\PixelArtBounce.ogg" />
+    <None Remove="Assets\PixelArt\PixelArtBounceFlange.ogg" />
+    <None Remove="Assets\PixelArt\Pixelart_Level1.tmx" />
+    <None Remove="Assets\PixelArt\Pixelart_Level2.tmx" />
+    <None Remove="Assets\PixelArt\TestLevel.tmx" />
+    <None Remove="Assets\PixelArt\tilemaptest.png" />
+    <None Remove="Assets\PixelArt\tileset.png" />
+    <None Remove="Assets\PixelArt\TreePortalAnim.png" />
+    <None Remove="Assets\Rock-BoxPixelArt.png" />
+    <None Remove="Assets\SemiRealistic\Background.png" />
+    <None Remove="Assets\SemiRealistic\Bounce.ogg" />
+    <None Remove="Assets\SemiRealistic\BounceFlange.ogg" />
+    <None Remove="Assets\SemiRealistic\CharacterFall.png" />
+    <None Remove="Assets\SemiRealistic\CharacterIdle.png" />
+    <None Remove="Assets\SemiRealistic\CharacterJump.png" />
+    <None Remove="Assets\SemiRealistic\CharacterWalk.png" />
+    <None Remove="Assets\SemiRealistic\Level_1_SemiRealism.tmx" />
+    <None Remove="Assets\SemiRealistic\Mushroom.png" />
+    <None Remove="Assets\SemiRealistic\SemiRealisticBounce.ogg" />
+    <None Remove="Assets\SemiRealistic\SemiRealisticBounceFlange.ogg" />
+    <None Remove="Assets\SemiRealistic\Tileset.png" />
+    <None Remove="Assets\SemiRealistic\TreePortal.png" />
+    <None Remove="Assets\SemiRealistic\TreePortalAnim.png" />
+    <None Remove="Assets\Sfx\Bonus 1.ogg" />
+    <None Remove="Assets\Sfx\Bonus 2.ogg" />
+    <None Remove="Assets\Sfx\Bonus 3.ogg" />
+    <None Remove="Assets\Sfx\Damage 1.ogg" />
+    <None Remove="Assets\Sfx\Damage 2.ogg" />
+    <None Remove="Assets\Sfx\Damage 3.ogg" />
+    <None Remove="Assets\Sfx\Damage 4.ogg" />
+    <None Remove="Assets\Sfx\Damage 5.ogg" />
+    <None Remove="Assets\Sfx\Extra.ogg" />
+    <None Remove="Assets\Sfx\Grass Footstep 1.ogg" />
+    <None Remove="Assets\Sfx\Grass Footstep 2.ogg" />
+    <None Remove="Assets\Sfx\Grass Footstep 3.ogg" />
+    <None Remove="Assets\Sfx\Grass Footstep 4.ogg" />
+    <None Remove="Assets\Sfx\Grass Footstep 5.ogg" />
+    <None Remove="Assets\Sfx\Jump 1.ogg" />
+    <None Remove="Assets\Sfx\Jump 2.ogg" />
+    <None Remove="Assets\Sfx\Jump 3.ogg" />
+    <None Remove="Assets\Sfx\Jump 4.ogg" />
+    <None Remove="Assets\Sfx\Spin Whoosh.ogg" />
+    <None Remove="Assets\Sfx\Wind Atmo.ogg" />
+    <None Remove="Assets\sheet_char.png" />
+    <None Remove="Assets\sheet_radish.png" />
+    <None Remove="Assets\Stylized\Bounce.ogg" />
+    <None Remove="Assets\Stylized\BounceFlange.ogg" />
+    <None Remove="Assets\Stylized\CharacterFall.png" />
+    <None Remove="Assets\Stylized\CharacterIdle.png" />
+    <None Remove="Assets\Stylized\CharacterJump.png" />
+    <None Remove="Assets\Stylized\CharacterWalk.png" />
+    <None Remove="Assets\Stylized\Level_Stylized_1.tmx" />
+    <None Remove="Assets\Stylized\Level_Stylized_2.tmx" />
+    <None Remove="Assets\Stylized\Level_Stylized_3.tmx" />
+    <None Remove="Assets\Stylized\Mushroom.png" />
+    <None Remove="Assets\Stylized\StylizedBounce.ogg" />
+    <None Remove="Assets\Stylized\StylizedBounceFlange.ogg" />
+    <None Remove="Assets\Stylized\TestLevel.tmx" />
+    <None Remove="Assets\Stylized\tileset.png" />
+    <None Remove="Assets\Stylized\TreePortal.png" />
+    <None Remove="Assets\Stylized\TreePortalAnim.png" />
+    <None Remove="Assets\test.png" />
+    <None Remove="Assets\Testsheet.jpg" />
+    <None Remove="Assets\throw.wav" />
+    <None Remove="Assets\tileset.png" />
+    <None Remove="Assets\title.png" />
+    <None Remove="Assets\TreePortalPixelArt.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\banner.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\credits.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\highestlowtitlesccreen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\PixelArt\Background.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\PixelArt\CharacterFall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\PixelArt\CharacterJump.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\PixelArt\CharacterIdle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\PixelArt\CharacterWalk.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\PixelArt\TestLevel.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\PixelArt\Mushroom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\PixelArt\PixelArtBounce.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\PixelArt\PixelArtBounceFlange.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\PixelArt\Pixelart_Level1.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\PixelArt\Pixelart_Level2.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\PixelArt\tileset.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\PixelArt\TreePortalAnim.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SemiRealistic\Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SemiRealistic\CharacterFall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SemiRealistic\CharacterIdle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SemiRealistic\CharacterJump.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SemiRealistic\CharacterWalk.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SemiRealistic\Level_1_SemiRealism.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SemiRealistic\Mushroom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SemiRealistic\SemiRealisticBounce.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SemiRealistic\SemiRealisticBounceFlange.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SemiRealistic\Tileset.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SemiRealistic\TreePortal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SemiRealistic\TreePortalAnim.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sfx\Bonus 1.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sfx\Bonus 2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sfx\Bonus 3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sfx\Damage 1.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sfx\Damage 2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sfx\Damage 3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sfx\Damage 4.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sfx\Damage 5.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sfx\Extra.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sfx\Grass Footstep 1.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sfx\Grass Footstep 2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sfx\Grass Footstep 3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sfx\Grass Footstep 4.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sfx\Grass Footstep 5.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sfx\Jump 1.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sfx\Jump 2.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sfx\Jump 3.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sfx\Jump 4.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sfx\Spin Whoosh.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Sfx\Wind Atmo.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Stylized\Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\PixelArt\TreePortal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Stylized\CharacterFall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Stylized\CharacterIdle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Stylized\CharacterJump.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Stylized\CharacterWalk.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Stylized\TestLevel.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Stylized\Level_Stylized_1.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Stylized\Level_Stylized_3.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Stylized\Level_Stylized_2.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Stylized\Mushroom.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Stylized\StylizedBounce.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Stylized\StylizedBounceFlange.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Stylized\tileset.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Stylized\TreePortal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Stylized\TreePortalAnim.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SFML.Net" Version="2.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BlackCoat">
+      <HintPath>lib\BlackCoat.dll</HintPath>
+    </Reference>
+    <Reference Include="TinyTools">
+      <HintPath>lib\TinyTools.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Assets\Testsheet.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
