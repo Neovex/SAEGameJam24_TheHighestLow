@@ -138,7 +138,7 @@ namespace LowHigh
 					return (_MusicLoader.Load(t + "Bounce"),
 							_MusicLoader.Load(t + "BounceFlange"));
 				});
-			foreach (var song in _Songs.SelectMany(kvp => new Music[] { kvp.Value.Item1, kvp.Value.Item1 }))
+			foreach (var song in _Songs.SelectMany(kvp => new Music[] { kvp.Value.Item1, kvp.Value.Item2 }))
 			{
 				song.Loop = true;
 				song.Volume = 0;
@@ -164,7 +164,6 @@ namespace LowHigh
 				newSong.Loop = true;
 			}
 
-			Debug.WriteLine(newSong.PlayingOffset.AsSeconds());
 			_CurrentSong = newSong;
 			_Core.AnimationManager.Run(0, MAX_VOL, fadeTime, v => newSong.Volume = v);
 		}
@@ -223,13 +222,11 @@ namespace LowHigh
 			var port = new FloatRect(0, 0, 1, 1);
 			if (size.X > corrected.Y)
 			{
-				Log.Debug(size.X, corrected.X);
 				port.Width = corrected.Y / size.X;
 				port.Left = (1 - port.Width) / 2;
 			}
 			else if (size.Y > corrected.X)
 			{
-				Log.Debug(size.Y, corrected.Y);
 				port.Height = corrected.X / size.Y;
 				port.Top = (1 - port.Height) / 2;
 			}
