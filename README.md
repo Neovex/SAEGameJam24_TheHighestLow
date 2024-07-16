@@ -7,6 +7,8 @@ This fun little Jump and Run game for Windows has been the the winning entry in 
 It features 6 very hard levels, 2 composed music tracks, 3 different artstyles, a load of custom sound effects, quirks, glitches, a high pitched gnome and lots and lots of mushrooms.
 On the technical side the game was realized using the [Black Coat Game Engine](https://github.com/Neovex/BlackCoat) and the [Tiled Level Editor](https://www.mapeditor.org).
 
+DOWNLOAD >> [HERE](/Download/The Highest Low.zip) <<
+
 ### Awards
 - First Prize :trophy:
 - Technical Programming Award
