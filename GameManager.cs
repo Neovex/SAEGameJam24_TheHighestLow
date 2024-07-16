@@ -94,14 +94,14 @@ namespace LowHigh
 			}
 			else if (arg == "mute")
 			{
-				_CurrentSong.Volume = 0;
 				MAX_VOL = 0;
+				if(_CurrentSong != null) _CurrentSong.Volume = MAX_VOL;
 				return true;
 			}
 			else if (arg == "unmute")
 			{
 				MAX_VOL = 25;
-				_CurrentSong.Volume = MAX_VOL;
+				if (_CurrentSong != null) _CurrentSong.Volume = MAX_VOL;
 				return true;
 			}
 			return false;
