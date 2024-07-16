@@ -70,8 +70,8 @@
   <object id="40" type="Portal" x="3211.7" y="1630.38" width="288" height="288"/>
   <object id="41" type="Start" x="147.455" y="1379.94"/>
   <object id="89" type="Shroom" x="1880.97" y="378.06"/>
-  <object id="166" type="Damage" x="784" y="1932" width="1213.33" height="176"/>
-  <object id="200" type="Damage" x="3556.67" y="1933.33" width="2199.33" height="176"/>
+  <object id="166" type="Damage" x="732" y="1952" width="1327.33" height="156"/>
+  <object id="200" type="Damage" x="3510.67" y="1951.33" width="2245.33" height="158"/>
   <object id="203" type="Damage" x="2495.34" y="1440" width="99.33" height="94"/>
   <object id="204" type="Damage" x="2302.34" y="771" width="99.33" height="94"/>
  </objectgroup>

@@ -86,12 +86,12 @@
  <objectgroup color="#ff5500" id="3" name="Interactive Objects">
   <object id="40" type="Portal" x="5369.7" y="1531.88" width="288" height="288"/>
   <object id="41" type="Start" x="233.455" y="1601.94"/>
-  <object id="43" type="Damage" x="1253.45" y="804.125" width="375.758" height="70.182"/>
+  <object id="43" type="Damage" x="1253.45" y="812.125" width="375.758" height="62.182"/>
   <object id="89" type="Shroom" x="1660.97" y="1146.06"/>
   <object id="90" type="Damage" x="390.909" y="508.242" width="78.7879" height="70.5455"/>
   <object id="93" type="Damage" x="1736.36" y="420.424" width="78.7879" height="59.8788"/>
   <object id="95" type="Damage" x="3945.45" y="1943.09" width="78.7879" height="70.5455"/>
   <object id="98" type="Damage" x="1923.45" y="2084" width="287.879" height="102.182"/>
-  <object id="99" type="Damage" x="4231.33" y="692.364" width="78.7879" height="71.8788"/>
+  <object id="99" type="Damage" x="4231.33" y="720.364" width="78.7879" height="43.8788"/>
  </objectgroup>
 </map>

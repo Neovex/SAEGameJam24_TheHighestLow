@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="60" height="22" tilewidth="376" tileheight="376" infinite="0" nextlayerid="4" nextobjectid="114">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="60" height="22" tilewidth="376" tileheight="376" infinite="0" nextlayerid="4" nextobjectid="115">
  <tileset firstgid="1" name="tileset" tilewidth="376" tileheight="376" tilecount="121" columns="11">
   <image source="tileset.png" width="4500" height="4500"/>
  </tileset>
@@ -65,8 +65,7 @@
   <object id="52" x="17300" y="5775.27" width="2604" height="244.727"/>
   <object id="53" x="16548" y="6544" width="1872" height="216"/>
   <object id="54" x="18052" y="6016" width="372" height="396"/>
-  <object id="56" x="18036" y="7876" width="2284" height="456"/>
-  <object id="57" x="6184" y="7898.18" width="10720" height="757.818"/>
+  <object id="57" x="6184" y="7898.18" width="13696" height="757.818"/>
   <object id="58" x="4651.52" y="7645.45" width="1736.36" height="999.996"/>
   <object id="59" x="4903.88" y="4286.78" width="748.485" height="233.333"/>
   <object id="60" x="3381.82" y="5018.18" width="748.485" height="242.425"/>
@@ -117,7 +116,8 @@
   <object id="3" type="Portal" x="21077.4" y="5971.35" width="1056" height="1260"/>
   <object id="20" type="Damage" x="6424" y="6408" width="988" height="1544"/>
   <object id="22" type="Damage" x="16664" y="1356" width="832" height="920"/>
-  <object id="69" type="Portal" x="16976" y="6770" width="1056" height="1500"/>
+  <object id="69" type="Damage" x="16976" y="6770" width="1056" height="1500"/>
   <object id="81" type="Damage" x="4906" y="6320" width="988" height="2224"/>
+  <object id="114" type="Damage" x="18248" y="5986" width="1400" height="1924"/>
  </objectgroup>
 </map>
