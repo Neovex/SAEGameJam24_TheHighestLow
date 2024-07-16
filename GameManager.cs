@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Linq;
-using System.Xml.Linq;
 using System.Collections.Generic;
+using System.Text.Json;
+using System.IO;
 using SFML.System;
 using SFML.Window;
 using SFML.Graphics;
@@ -9,9 +10,6 @@ using SFML.Audio;
 using BlackCoat;
 using BlackCoat.InputMapping;
 using BlackCoat.AssetHandling;
-using System.Reflection;
-using System.Diagnostics;
-using System.Security.Cryptography;
 
 namespace LowHigh
 {
@@ -27,7 +25,6 @@ namespace LowHigh
 		private static Dictionary<string, (Music, Music)> _Songs;
 		private static Music _CurrentSong;
 
-		public static TextureLoader TextureLoader { get; private set; }
 		public static SfxManager Sfx { get; private set; }
 
 		public static Vector2f FullHD;
@@ -37,13 +34,8 @@ namespace LowHigh
 
 		private static string[] _LevelTypes = ["PixelArt", "Stylized", "SemiRealistic"];
 		public static string LevelType { get; private set; } = _LevelTypes[0];
-		private static readonly Dictionary<string, string[]> _LevelNames = new()
-		{
-			[_LevelTypes[0]] = ["Pixelart_Level1", "Pixelart_Level2"],
-			[_LevelTypes[1]] = ["Level_Stylized_1", "Level_Stylized_2", "Level_Stylized_3"],
-			[_LevelTypes[2]] = ["Level_1_SemiRealism"]
-		};
-		public static string LevelName { get; private set; } = _LevelNames[LevelType][0];
+		private static Dictionary<string, string[]> _LevelNames;
+		public static string LevelName { get; private set; }
 		public static bool Teleport { get; set; }
 		
 		public static Jump Jump => LevelType switch
@@ -118,15 +110,17 @@ namespace LowHigh
 		private static void PreloadAssets()
 		{
 			// Global Textures
-			TextureLoader = new TextureLoader("Assets");
-			//TextureLoader.Load("sheet_radish");
+			var assetRoot = "Assets\\";
+
+			// GameConfig
+			_LevelNames = JsonSerializer.Deserialize<Dictionary<string, string[]>>(File.ReadAllText(assetRoot + "Levels.json"));
+			Log.Debug(_LevelNames.Sum(kvp => kvp.Value.Length), "levels loaded");
+			LevelName = _LevelNames[LevelType][0];
 
 			// Global Sound
-			var loader = new SfxLoader(TextureLoader.RootFolder + "\\Sfx");
-			var r = loader.LoadAllFilesInDirectory(true);
+			var loader = new SfxLoader(assetRoot + "Sfx");
 			Sfx = new SfxManager(loader, () => MAX_VOL + 20);
-			Sfx.LoadFromFileList(r, 4);
-			//Sfx.LoadFromDirectory(TextureLoader.RootFolder, 4); // broken WTF?!
+			Sfx.LoadFromDirectory(parallelSounds: 4);
 
 			// Global Music
 			_MusicLoader = new MusicLoader();
@@ -148,7 +142,7 @@ namespace LowHigh
 
 		public static void CrossfadeToNextSong(bool flang)
 		{
-			const float fadeTime = .5f;
+			const float fadeTime = 3.6f;
 			var set = _Songs[LevelType];
 
 			var newSong = flang ? set.Item2 : set.Item1;
@@ -158,10 +152,6 @@ namespace LowHigh
 			{
 				var old = _CurrentSong;
 				_Core.AnimationManager.Run(old.Volume, 0, fadeTime, v => old.Volume = v);
-				newSong.Volume = 0;
-				newSong.Play();
-				newSong.PlayingOffset = old.PlayingOffset;
-				newSong.Loop = true;
 			}
 
 			_CurrentSong = newSong;
