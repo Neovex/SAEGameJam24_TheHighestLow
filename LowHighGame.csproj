@@ -22,6 +22,7 @@
     <None Remove="Assets\level2.tmx" />
     <None Remove="Assets\Level3.tmx" />
     <None Remove="Assets\Level4.tmx" />
+    <None Remove="Assets\Levels.json" />
     <None Remove="Assets\MushroomPixelArt.png" />
     <None Remove="Assets\music.ogg" />
     <None Remove="Assets\pickup.wav" />
@@ -106,6 +107,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\highestlowtitlesccreen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Levels.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\PixelArt\Background.png">
